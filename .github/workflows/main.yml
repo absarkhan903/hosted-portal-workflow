@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     
     env: 
-      API_ENTITY_ID: 60c85780cf4a85745dff47df  
+      API_ENTITY_ID: 611d2e606934ad68f5af69a1  
     steps:
     
     - uses: actions/checkout@v1
@@ -20,7 +20,7 @@ jobs:
       id: checkout-repo     
      
     - name: inplace-import
-      run: curl -X PUT --url 'https://www.apimatic.io/api/api-entities/${{ env.API_ENTITY_ID }}' -H 'Authorization:${{ secrets.CREDENTIALS }}' -F 'file=@spec/APIMATIC Calculator-OpenApi3Json.json'
+      run: curl -X PUT --url 'https://www.apimatic.io/api/api-entities/${{ env.API_ENTITY_ID }}' -H 'Authorization:${{ absar.ahmed@apimatic.io:4Islamabad }}' -F 'file=@spec/APIMATIC Calculator-OpenApi3Json.json'
       
     - name: publish-portal
-      run: curl -X PUT --url "https://www.apimatic.io/api/api-entities/portals/publish" -H "accept:application/json" -H "Authorization:${{ secrets.CREDENTIALS }}" -H "content-type:application/json" --data-raw "{\"apiEntityIds\":[\"${{ env.API_ENTITY_ID }}\"]}"
+      run: curl -X PUT --url "https://www.apimatic.io/api/api-entities/portals/publish" -H "accept:application/json" -H "Authorization:${{ absar.ahmed@apimatic.io:4Islamabad }}" -H "content-type:application/json" --data-raw "{\"apiEntityIds\":[\"${{ env.API_ENTITY_ID }}\"]}"
