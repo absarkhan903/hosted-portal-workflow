@@ -2,7 +2,7 @@
   "openapi": "3.0.0",
   "info": {
     "title": "APIMATIC Calculator test",
-    "description": "Simple calculator API hosted on APIMATIC",
+    "description": "Simple calculator API hosted on APIMATIC by Absar Ahmed",
     "contact": {},
     "version": "1.0"
   },
@@ -20,7 +20,7 @@
           "Simple Calculator"
         ],
         "summary": "Calculate",
-        "description": "Calculates the expression using the specified operation.",
+        "description": "Calculates the expression using the specified operation by Absar.",
         "operationId": "Calculate",
         "parameters": [
           {
